@@ -1,0 +1,163 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Student Activity Portal</title>
+ <style>
+ body {
+ font-family: Arial;
+ margin: 0;
+ background: #f5f5f5;
+ color: #222;
+ }
+ header, footer {
+ background: #333;
+ color: white;
+ text-align: center;
+ padding: 15px;
+ }
+ nav {
+ background: #555;
+ padding: 12px;
+ text-align: center;
+ }
+ nav a {
+ color: white;
+ margin: 10px;
+ }
+ main {
+ max-width: 900px;
+ margin: auto;
+ padding: 20px;
+ }
+ section, article, aside {
+ background: white;
+ padding: 15px;
+ margin-bottom: 15px;
+ border-radius: 5px;
+ }
+ input, select, textarea {
+ width: 100%;
+ padding: 8px;
+ margin: 8px 0;
+ box-sizing: border-box;
+ }
+ button {
+ background: #333;
+ color: white;
+ padding: 10px;
+ border: none;
+ }
+ </style>
+</head>
+<body>
+<header>
+ <h1>University Student Activity Portal</h1>
+ <p>Explore. Participate. Grow.</p>
+</header>
+<nav>
+ <a href="#home">Home</a>
+ <a href="#events">Events</a>
+ <a href="#activities">Activities</a>
+ <a href="#register">Register</a>
+</nav>
+<main id="home">
+ <section>
+ <h2>Welcome Students!</h2>
+ <p>Explore events, participate in activities and develop your skills.</p>
+ </section>
+ <section id="events">
+ <h2>Upcoming Events</h2>
+ <article>
+ <h3>Technical Hackathon</h3>
+ <p>Date: 25 November 2026</p>
+ <p>Venue: University Auditorium</p>
+ </article>
+ <article>
+ <h3>Cultural Fest</h3>
+ <p>Date: 28 November 2026</p>
+ </article>
+ <article>
+ <h3>Sports Championship</h3>
+ <p>Date: 2 December 2026</p>
+ </article>
+ </section>
+ <section id="activities">
+ <h2>University Activities</h2>
+ <p>Technical: Workshops and coding competitions.</p>
+ <p>Cultural: Dance, music and drama.</p>
+ <p>Sports: Cricket, football and athletics.</p>
+ </section>
+ <aside>
+ <h2>Important Notice</h2>
+ <p>Complete registration before the event deadline.</p>
+ </aside>
+ <section id="register">
+ <h2>Student Registration Form</h2>
+ <form>
+ <fieldset>
+ <legend>Personal Details</legend>
+ <label>Name:</label>
+ <input type="text" required>
+ <label>Student ID:</label>
+ <input type="text" required>
+ <label>Email:</label>
+ <input type="email" required>
+ <label>Mobile:</label>
+ <input type="tel" pattern="[0-9]{10}" required>
+ </fieldset>
+ <fieldset>
+ <legend>Academic Details</legend>
+ <label>Department:</label>
+ <select required>
+ <option value="">Select Department</option>
+ <option>CSE</option>
+ <option>ECE</option>
+ <option>EEE</option>
+ <option>MECH</option>
+ </select>
+ <label>Year:</label>
+ <select required>
+ <option value="">Select Year</option>
+ <option>First Year</option>
+ <option>Second Year</option>
+ <option>Third Year</option>
+ <option>Fourth Year</option>
+ </select>
+ </fieldset>
+ <fieldset>
+ <legend>Gender</legend>
+ <label><input type="radio" name="gender" required> Male</label>
+ <label><input type="radio" name="gender"> Female</label>
+ <label><input type="radio" name="gender"> Other</label>
+ </fieldset>
+ <fieldset>
+ <legend>Event Selection</legend>
+ <select required>
+ <option value="">Choose Event</option>
+ <option>Hackathon</option>
+ <option>Cultural Fest</option>
+ <option>Sports Championship</option>
+ </select>
+ </fieldset>
+ <fieldset>
+ <legend>Interests</legend>
+ <label><input type="checkbox"> Coding</label>
+ <label><input type="checkbox"> Music</label>
+ <label><input type="checkbox"> Sports</label>
+ <label><input type="checkbox"> Dance</label>
+ </fieldset>
+ <label>Why do you want to participate?</label>
+ <textarea rows="3"></textarea>
+ <label><input type="checkbox" required> I agree to the terms.</label>
+ <button type="submit">Submit</button>
+ <button type="reset">Clear</button>
+ </form>
+ </section>
+</main>
+<footer>
+ <p>&copy; 2026 University Student Activity Portal</p>
+</footer>
+</body>
+</html>

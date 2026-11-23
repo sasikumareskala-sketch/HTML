@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Hospital Appointment Management</title>
+</head>
+<body>
+ <header>
+ <h1>ABC Hospital</h1>
+ <p>Your Health, Our Priority</p>
+ </header>
+ <nav>
+ <a href="#home">Home</a> |
+ <a href="#services">Services</a> |
+ <a href="#doctors">Doctors</a> |
+ <a href="#appointment">Appointment</a>
+ </nav>
+ <main>
+ <section id="home">
+ <h2>Welcome to ABC Hospital</h2>
+ <p>We provide quality healthcare services.</p>
+ </section>
+ <section id="services">
+ <h2>Our Services</h2>
+ <ul>
+ <li>Emergency Care</li>
+ <li>Cardiology</li>
+ <li>General Medicine</li>
+ </ul>
+ </section>
+ <section id="doctors">
+ <h2>Our Doctors</h2>
+ <article>
+ <h3>Dr. Ravi Kumar</h3>
+ <p>Cardiologist</p>
+ </article>
+ <article>
+ <h3>Dr. Priya</h3>
+ <p>General Physician</p>
+ </article>
+ </section>
+ <section id="appointment">
+ <h2>Book an Appointment</h2>
+ <form>
+ <label for="name">Patient Name:</label>
+ <input type="text" id="name" required>
+ <br><br>
+ <label for="email">Email:</label>
+ <input type="email" id="email" required>
+ <br><br>
+ <label for="phone">Phone:</label>
+ <input type="tel" id="phone" pattern="[0-9]{10}" required>
+ <br><br>
+ <label for="date">Appointment Date:</label>
+ <input type="date" id="date" required>
+ <br><br>
+ <label for="doctor">Select Doctor:</label>
+ <select id="doctor" required>
+ <option value="">Choose Doctor</option>
+ <option>Dr. Ravi Kumar</option>
+ <option>Dr. Priya</option>
+ </select>
+ <br><br>
+ <button type="submit">Book Appointment</button>
+ </form>
+ </section>
+ </main>
+ <footer>
+ <p>&copy; 2026 ABC Hospital. All Rights Reserved.</p>
+ </footer>
+</body>
+</html>
